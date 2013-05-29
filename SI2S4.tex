@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}\usepackage{graphicx, color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.2, 0.2, 0.2}
+\newcommand{\hlnumber}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlfunctioncall}[1]{\textcolor[rgb]{0.501960784313725,0,0.329411764705882}{\textbf{#1}}}%
+\newcommand{\hlstring}[1]{\textcolor[rgb]{0.6,0.6,1}{#1}}%
+\newcommand{\hlkeyword}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlargument}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
+\newcommand{\hlcomment}[1]{\textcolor[rgb]{0.180392156862745,0.6,0.341176470588235}{#1}}%
+\newcommand{\hlroxygencomment}[1]{\textcolor[rgb]{0.43921568627451,0.47843137254902,0.701960784313725}{#1}}%
+\newcommand{\hlformalargs}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
+\newcommand{\hleqformalargs}[1]{\textcolor[rgb]{0.690196078431373,0.250980392156863,0.0196078431372549}{#1}}%
+\newcommand{\hlassignement}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlpackage}[1]{\textcolor[rgb]{0.588235294117647,0.709803921568627,0.145098039215686}{#1}}%
+\newcommand{\hlslot}[1]{\textit{#1}}%
+\newcommand{\hlsymbol}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlprompt}[1]{\textcolor[rgb]{0.2,0.2,0.2}{#1}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+%%%%%%%%%%%%%%%%%%%%导言区%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Ubuntu}%缺省英文字体 Times New Roman                          
+\setCJKmainfont{文泉驿微米黑}%衬线字体 缺省中文字体为    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{一份（不那么）简短的S4类的介绍\\[2ex]R中的面向对象的编程}
+\author{Christophe Genolini{ }\\ HatMatri翻译}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\begin{document}
+\maketitle
+
+\part{初步}
+\section{介绍}
+这是一份对于R（或者S4类）的面向对象编程的指导。它不需要事先了解面向对象编程的，但是少量的关于R
+的知识和对编程的大致了解还是必须的。对于那些完全的新手来说，看看章节D和第66提供的一些手册和书籍。
+\subsection{序言：哲学和计算机科学}
+你将要阅读一本关于面向对象编程的指导手册，你将因此学习一种新的方法。你将或知道不是存在“一种”而是“很多种”编程的方法：在这个议题上，数据处理专家并不总是同意。
+这份指导手册紧跟当前的观点（XXX）。一些非常有能力的人同意这一点，另外一些这不同意……所以这份手册讲过出现好几种观点。
+因此，警告读者，在你手中握有所有的元素，你又能力自己来判断并且自由地选择你自己的概念，知识之光……它是没有生命的盛大？（法语的Elle n’est pas
+belle la vie?Google翻译的，不知道什么意思）
+
+\subsection{什么是S4}
+S4是S语言的第四版本。S语言有两种实现：商业的S-plus和自由的R。s4向比较与S3增加的主要特性是开发函数的时候允许把S语言当作是一门面向对象的语言\footnote{允许当作面向对象的不知转换为面向对象的，在任何情况下，R都不是一门面向对象的语言，仍然是一门传统的编程语言，使用进一步的封装来解释(XXX),迫不及待想发现R++了(类比c和c++——译注)}。
+
+\end{document}
