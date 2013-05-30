@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.5.11)  29 MAY 2013 23:59
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.5.11)  30 MAY 2013 08:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,14 +959,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 ] [2]
-(./SI2S4.aux) ) 
-Here is how much of TeX's memory you used:
- 14733 strings out of 494004
- 329601 string characters out of 3150890
- 316274 words of memory out of 3000000
- 17861 multiletter control sequences out of 15000+200000
- 7529 words of font info for 56 fonts, out of 3000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 36i,8n,33p,575b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+Package color Info: Redefining color shadecolor on input line 101.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 102
+.
 
-Output written on SI2S4.pdf (2 pages).
+(/usr/local/texlive/2012/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+*************************************************
+* xeCJK warning: "CJKfamily-Unknown"
+* 
+* Unknown CJK family 'tt' is ignored.
+* 
+* Try to use \setCJKmonofont[...]{...} to define it.
+*************************************************
+Package color Info: Redefining color shadecolor on input line 116.
+[3] (./SI2S4.aux) ) 
+Here is how much of TeX's memory you used:
+ 14795 strings out of 494004
+ 331185 string characters out of 3150890
+ 318274 words of memory out of 3000000
+ 17917 multiletter control sequences out of 15000+200000
+ 7545 words of font info for 58 fonts, out of 3000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 36i,8n,33p,575b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on SI2S4.pdf (3 pages).
